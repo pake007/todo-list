@@ -3,5 +3,5 @@ require "dm-core"
 class Todo
   include DataMapper::Resource
   property :id, Serial
-  property :summary, String, :null => false
+  property :summary, String, :required => true
 end
