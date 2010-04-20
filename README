@@ -12,7 +12,9 @@ gem install do_sqlite3
  * To make your sqlite database:
 
 mkdir db
+touch development.sqlite3
 sqlite3 db/development.sqlite3
+sqlite> CREATE TABLE todos (id INTEGER PRIMARY KEY, summary VARCHAR);
 
  * todolist.rb => edit configure, to do automigrate at first time
 
